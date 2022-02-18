@@ -1,38 +1,66 @@
 .App {
-  text-align: center;
+  display: flex;
+  font-family: "IBM Plex Sana Thai Looped", sans-serif;
+  color: white;
+  background: linear-gradient(179deg, #176eb5, #d545d7);
+  text-shadow: 1px 0px 2px #8dc4f0;
+}
+.body_container {
+  flex: 1;
+}
+.sidebar_container {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  left:0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sidebar{
+  display: flex;
+  width: 14rem;
+  height: 90%;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  padding: 15px;
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  border-radius:10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.lines_icon{
+  display: flex;
+  align-self: flex-end;
+  border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile{
+display: flex;
+align-items: center;
+border-radius: 50%;
+margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profile>img{
+  width: 100%;
+border-radius: 50%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.groups{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%
 }
-
-.App-link {
-  color: #61dafb;
+.group{
+  display: flex;
+  flex-direction: column;
+  width: 100%
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3{
+  font-size: 1rem;
+  margin: 10px 0px 10px 0px
 }
